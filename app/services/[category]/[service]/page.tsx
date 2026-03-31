@@ -139,13 +139,16 @@ export default async function ServicePage({ params }: ServicePageProps) {
                         </section>
 
 
-                        <section className="bg-primary/5 rounded-[3rem] p-10 md:p-16 border border-primary/10 relative overflow-hidden">
-                            <LucideTarget className="absolute -right-10 -bottom-10 text-primary/5 w-64 h-64 rotate-12" />
-                            <h3 className="text-2xl font-black mb-12 italic uppercase tracking-tight relative z-10">Implementation Logic</h3>
-                            <div className="relative z-10 prose prose-slate max-w-none">
-                                <RichText content={content} />
-                            </div>
-                        </section>
+                        {
+                            content &&
+                            <section className="bg-primary/5 rounded-[3rem] p-10 md:p-16 border border-primary/10 relative overflow-hidden">
+                                <LucideTarget className="absolute -right-10 -bottom-10 text-primary/5 w-64 h-64 rotate-12" />
+                                <h3 className="text-2xl font-black mb-12 italic uppercase tracking-tight relative z-10">Implementation Logic</h3>
+                                <div className="relative z-10 prose prose-slate max-w-none">
+                                    <RichText content={content} />
+                                </div>
+                            </section>
+                        }
 
 
                         <section className="grid grid-cols-1 md:grid-cols-2 gap-8">
