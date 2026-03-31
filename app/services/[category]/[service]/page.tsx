@@ -139,7 +139,7 @@ export default async function ServicePage({ params }: ServicePageProps) {
                         </section>
 
 
-                        {
+                        {/* {
                             content &&
                             <section className="bg-primary/5 rounded-[3rem] p-10 md:p-16 border border-primary/10 relative overflow-hidden">
                                 <LucideTarget className="absolute -right-10 -bottom-10 text-primary/5 w-64 h-64 rotate-12" />
@@ -148,7 +148,7 @@ export default async function ServicePage({ params }: ServicePageProps) {
                                     <RichText content={content} />
                                 </div>
                             </section>
-                        }
+                        } */}
 
 
                         <section className="grid grid-cols-1 md:grid-cols-2 gap-8">
