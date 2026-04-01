@@ -38,6 +38,7 @@ export default async function RootLayout({
       <head>
         <style dangerouslySetInnerHTML={{ __html: styleHtml }} />
         <meta name="google-site-verification" content="O7nX4YmW-quu_eXgDAyurAPbjs01WUaNIVWrv6sQQFU" />
+        <link rel="icon" href="/favicon_tlscred.ico" />
       </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased flex flex-col min-h-screen`}
