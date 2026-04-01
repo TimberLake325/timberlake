@@ -3,6 +3,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 import WebPage from "./content";
 import "./globals.css";
 import { getThemeConfig } from "@/actions/theme";
+import Script from "next/script";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -15,8 +16,18 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Timberlake | Premier Medical Billing & RCM",
-  description: "Timberlake provides expert, HIPAA-compliant medical billing and revenue cycle management services to healthcare providers nationwide.",
+  title: {
+    default: "Tlscred | Medical Credentialing & Billing Services",
+    template: "%s | Tlscred",
+  },
+  description: "TimberLake Services LLC provides expert provider credentialing, CAQH management, and medical billing solutions in South Carolina. Get your practice enrolled today.",
+  applicationName: "Tlscred",
+  openGraph: {
+    title: "Tlscred",
+    siteName: "Tlscred",
+    url: "https://tlscred.com",
+    type: "website",
+  },
 };
 
 export default async function RootLayout({
@@ -39,6 +50,21 @@ export default async function RootLayout({
         <style dangerouslySetInnerHTML={{ __html: styleHtml }} />
         <meta name="google-site-verification" content="O7nX4YmW-quu_eXgDAyurAPbjs01WUaNIVWrv6sQQFU" />
         <link rel="icon" href="/favicon_tlscred.ico" />
+        <meta name="theme-color" content="#ffffff" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+        <Script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "Organization",
+              name: "Tlscred",
+              alternateName: "TimberLake Services LLC",
+              url: "https://tlscred.com",
+              logo: "https://tlscred.com/favicon_tlscred.ico",
+            }),
+          }}
+        />
       </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased flex flex-col min-h-screen`}

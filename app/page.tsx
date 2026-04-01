@@ -17,8 +17,8 @@ export async function generateMetadata(): Promise<Metadata> {
   const seo = homePageData?.metadata;
 
   return generatePageMetadata({
-    title: seo?.title || HOME_DATA?.metaData?.title || 'Timberlake - Premier Medical Billing & RCM',
-    description: seo?.description || HOME_DATA?.metaData?.description || 'Timberlake provides expert, HIPAA-compliant medical billing and revenue cycle management services to healthcare providers nationwide.',
+    title: seo?.title || HOME_DATA?.metaData?.title || 'Medical Credentialing & Billing Services | TimberLake Services LLC',
+    description: seo?.description || HOME_DATA?.metaData?.description || 'TimberLake Services LLC provides expert provider credentialing, CAQH management, and medical billing solutions in South Carolina. Get your practice enrolled today.',
     keywords: seo?.keywords || HOME_DATA?.metaData?.keywords || ['medical billing', 'RCM', 'HIPAA compliant'],
     path: '/',
     image: seo?.image || HOME_DATA?.metaData?.image || '/og-image.jpg',
