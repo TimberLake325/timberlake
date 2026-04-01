@@ -37,6 +37,7 @@ export default async function RootLayout({
     <html lang="en">
       <head>
         <style dangerouslySetInnerHTML={{ __html: styleHtml }} />
+        <meta name="google-site-verification" content="O7nX4YmW-quu_eXgDAyurAPbjs01WUaNIVWrv6sQQFU" />
       </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased flex flex-col min-h-screen`}
