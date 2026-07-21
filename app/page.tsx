@@ -44,14 +44,14 @@ export default async function Home() {
 
   return (
     <div className="flex flex-col">
-      <Hero data={heroData || HOME_DATA.heroSection} />
+      {/* <Hero data={heroData || HOME_DATA.heroSection} />
       <Certifications data={certificationsData || HOME_DATA.certifications} />
       <CompanyStats data={statsData || HOME_DATA.companyStats} />
       <ServicesOverview data={servicesData || HOME_DATA.servicesOverview} />
       <WhyChooseUs data={whyChooseUsData || HOME_DATA.whyChooseUs} />
       <InsurancePayers data={payersData || HOME_DATA.insurancePayers} />
       <AppointmentBooking data={bookingData || HOME_DATA.appointmentBooking} />
-      <CTABanner data={ctaBannerData || HOME_DATA.ctaBanner} />
+      <CTABanner data={ctaBannerData || HOME_DATA.ctaBanner} /> */}
     </div>
   );
 }
