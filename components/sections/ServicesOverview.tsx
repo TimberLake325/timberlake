@@ -41,6 +41,7 @@ interface ServiceItem {
     badge?: string;
     benefits?: string[];
     ctaText?: string;
+    category?: string
 }
 
 interface ServicesOverviewProps {
@@ -184,7 +185,9 @@ export default function ServicesOverview({ data }: ServicesOverviewProps = {}) {
                         const serviceSlug = service.slug || serviceId;
                         const benefits = service.benefits || [];
                         const ctaText = service.ctaText || "Explore Details";
-
+                        const serviceCategory = service.category || "";
+                        console.log('serviceCategory: ', serviceCategory)
+                        console.log('service: ', service)
                         return (
                             <Card
                                 key={serviceId}
@@ -240,7 +243,7 @@ export default function ServicesOverview({ data }: ServicesOverviewProps = {}) {
 
                                 <div className="mt-auto pt-6 border-t border-border/50">
                                     <CTALink
-                                        href={`/services/${serviceSlug}`}
+                                        href={`/services/${serviceCategory}/${serviceSlug}`}
                                         variant="ghost"
                                         className="p-0 h-auto font-black uppercase text-[11px] tracking-widest text-primary hover:gap-3 p-2"
                                     >
