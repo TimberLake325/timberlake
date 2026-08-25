@@ -28,7 +28,7 @@ export const getHomePage = unstable_cache(
                             _id: { $in: section.content.serviceIds },
                             isActive: true,
                             isDeleted: false
-                        }).sort({ displayOrder: 1 }).lean();
+                        }).populate('category', 'slug name').sort({ displayOrder: 1 }).lean();
 
                         section.content.services = services;
                     }

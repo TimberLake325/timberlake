@@ -155,7 +155,8 @@ export default function ServicesOverview({ data }: ServicesOverviewProps = {}) {
         slug: s.slug || (s.name || "").toLowerCase().replace(/\s+/g, '-'),
         ctaText: "Explore Details",
         card_bg: s.card_bg,
-        icon_bg: s.icon_bg
+        icon_bg: s.icon_bg,
+        category: s.category?.slug || ""
     }));
 
     if (services.length === 0) {
