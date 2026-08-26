@@ -61,7 +61,7 @@ export default async function RootLayout({
               name: "Tlscred",
               alternateName: "TimberLake Services LLC",
               url: "https://tlscred.com",
-              logo: "https://tlscred.com/favicon_tlscred.ico",
+              logo: "https://tlscred.com/favicon.ico",
             }),
           }}
         />
