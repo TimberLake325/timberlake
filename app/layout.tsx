@@ -49,7 +49,7 @@ export default async function RootLayout({
       <head>
         <style dangerouslySetInnerHTML={{ __html: styleHtml }} />
         <meta name="google-site-verification" content="O7nX4YmW-quu_eXgDAyurAPbjs01WUaNIVWrv6sQQFU" />
-        <link rel="icon" href="/favicon_tlscred.ico" />
+        <link rel="icon" href="/favicon.ico" />
         <meta name="theme-color" content="#ffffff" />
         <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
         <Script
