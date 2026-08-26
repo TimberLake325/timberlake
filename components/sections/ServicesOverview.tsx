@@ -187,8 +187,6 @@ export default function ServicesOverview({ data }: ServicesOverviewProps = {}) {
                         const benefits = service.benefits || [];
                         const ctaText = service.ctaText || "Explore Details";
                         const serviceCategory = service.category || "";
-                        console.log('serviceCategory: ', serviceCategory)
-                        console.log('service: ', service)
                         return (
                             <Card
                                 key={serviceId}
