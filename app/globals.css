@@ -208,3 +208,39 @@ body {
 .rich-text .editor-quote {
   @apply pl-8 border-l-4 border-primary/30 italic text-foreground/60 text-xl md:text-2xl my-10 font-medium;
 }
+/* H5 & H6 headings */
+.rich-text h5,
+.rich-text .editor-heading-h5 {
+  @apply text-base font-semibold text-foreground/80 mt-10 mb-3 tracking-wide;
+}
+
+.rich-text h6,
+.rich-text .editor-heading-h6 {
+  @apply text-sm font-semibold text-foreground/50 mt-8 mb-2 uppercase tracking-widest;
+}
+
+/* Strikethrough */
+.rich-text .editor-text-strikethrough {
+  @apply line-through decoration-foreground/30;
+}
+
+/* Inline Code */
+.rich-text code,
+.rich-text .editor-text-code {
+  @apply bg-primary/[0.08] text-primary px-2 py-0.5 rounded-md text-[0.9em] font-mono border border-primary/10;
+}
+
+/* Superscript & Subscript */
+.rich-text sup {
+  @apply text-[0.7em] align-super text-foreground/60;
+}
+
+.rich-text sub {
+  @apply text-[0.7em] align-sub text-foreground/60;
+}
+
+/* Link styling */
+.rich-text a,
+.rich-text .editor-link {
+  @apply text-primary underline underline-offset-4 decoration-primary/30 hover:decoration-primary transition-colors font-semibold;
+}
